@@ -9,11 +9,13 @@ import javax.persistence.Id;
 @Entity
 public class Compra {
 
-	public ArrayList<Produto>Produto;
+	private ArrayList <Produto> Produto;
 	
 	@Id
 	@GeneratedValue
 	private Integer id;
+	
+
 
 	private String email;
 	private String senha;

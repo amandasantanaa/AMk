@@ -1,8 +1,12 @@
 package AmandaAmazon.AmandaAmazon.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 
 @Entity
 public class Carrinho {
@@ -11,9 +15,12 @@ public class Carrinho {
 	@GeneratedValue
 	private Integer id;
 
+	@ManyToMany(cascade=CascadeType.ALL)
+	private List<Produto> produto;
+
 
 	public void adicionarProduto(Produto um) { 
-
+		
 	}
 
 	public void removerProduto(Produto um) { 

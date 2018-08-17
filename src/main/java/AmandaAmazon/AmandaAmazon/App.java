@@ -3,7 +3,7 @@ package AmandaAmazon.AmandaAmazon;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 
-import AmandaAmazon.AmandaAmazon.model.Produto;
+import AmandaAmazon.AmandaAmazon.model.Usuario;
 
 public class App {
 	
@@ -12,13 +12,14 @@ public class App {
 		EntityTransaction tx = manager.getTransaction();
 		tx.begin();
 		
-		/*
+		
 		Usuario u = new Usuario();
 		
-		u.setNome("joão");
-		u.setSenha("456");
+		u.setNome("pedro");
+		u.setSenha("157");
 		u.setEmail ("marialinda.com.br");
-		*/
+		
+		
 		
 		manager.persist(u);
 		

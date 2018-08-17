@@ -6,18 +6,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-
-public class Departamento extends Loja {
+public class Departamento {
 
 	@Id
 	@GeneratedValue
 	private Integer id;
 
 
-	public String eletronicos;
-	public String papelaria;
-	public String casa;
-	public String livros;
+	private String eletronicos;
+	private String papelaria;
+	private String casa;
+	private String livros;
 
 	public String getLivros() {
 		return livros;

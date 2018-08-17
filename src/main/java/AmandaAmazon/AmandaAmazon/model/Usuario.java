@@ -6,13 +6,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Usuario extends Carrinho {
+public class Usuario  {
 
 	@Id
 	@GeneratedValue
 	private Integer id;
 	
-	@Column( length=100, unique=true)
+	@Column( length=100)
 	private String nome;
 	
 	@Column

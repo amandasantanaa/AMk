@@ -1,20 +1,28 @@
 package AmandaAmazon.AmandaAmazon.model;
 
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-
-public class Produto extends Departamento {
+public class Produto  {
+	
 	@Id
 	@GeneratedValue
-	private Integer id; 
+	private Integer id;
+	
+//	@ManyToOne (Cascade = Cascadetype.ALL)
+//	
+//	private List<Descrição> Descrição;
 
-	public String nome;
-	public String descricao;
-	public String codDep;
+	
+	private String Produto;
+
+	private String nome;
+	private String descricao;
+	private String codDep;
 
 
 	public String getNome() {

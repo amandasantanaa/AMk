@@ -12,8 +12,8 @@ public class Loja {
 	@GeneratedValue
 	
 	private Integer id;
-	public ArrayList<Usuario>Usuario;
-	public ArrayList<Departamento>Departamento;
+	private ArrayList<Usuario>Usuario;
+	private ArrayList<Departamento>Departamento;
 	
 	@Override
 	public int hashCode() {
